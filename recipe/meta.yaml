@@ -1,6 +1,6 @@
 {% set name = "perl-package-stash-xs" %}
-{% set version = "0.30" %}
-{% set sha256 = "26bad65c1959c57379b3e139dc776fbec5f702906617ef27cdc293ddf1239231" %}
+{% set version = "0.32" %}
+{% set sha256 = "9f961e798c01370f3834eda5f010c9d60c68a96d15c48598d8a5a25ca32f5f11" %}
 
 package:
   name: {{ name }}
@@ -11,8 +11,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  skip: true   # [win]
-  number: 2
+  skip: true  # [win]
+  number: 0
   run_exports:
     weak:
       - {{ name }} ={{ version }}
